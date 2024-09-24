@@ -59,7 +59,10 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
-<ViewTransitions  />
+<!-- Search Engines -->
+<meta name="msvalidate.01" content="0671F83E3FDB4084AA2CB76DA9B27BF7" />
+
+<ViewTransitions />
 
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client";
